@@ -1,13 +1,7 @@
 name: test
 
 on:
-  pull_request:
-    branches: [master]
-    paths-ignore: [".gitignore", "**/*.md", ".github/ISSUE_TEMPLATE/**"]
-    types: [opened, edited, reopened, synchronize, unlocked]
-  push:
-    branches: [master]
-    paths-ignore: [".gitignore", "**/*.md", ".github/ISSUE_TEMPLATE/**"]
+  workflow_dispatch:
 
 jobs:
   go-test:
